@@ -1,0 +1,85 @@
+/* BG-HEADER */
+
+.bg-primary {
+    background: linear-gradient(125deg, #e91e63, #2196f3,#e91e63, #00bcd4) !important;
+}
+
+/* Éliminer le scroll indésirable */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* S'assurer que le conteneur principal n'dépasse pas */
+.container-fluid {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Contrôler la hauteur des sections */
+section {
+    min-height: auto;
+}
+
+/* S'assurer que les images ne dépassent pas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+header ul li a {
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+header ul li a:hover {
+    opacity: 0.8;
+}
+
+/* Boutons du header */
+.btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    color: white;
+}
+
+.btn-light {
+    background-color: white;
+    color: #333;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+/* H1 page d'd'accueil */
+header h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+header h4 {
+    font-weight: 300;
+}
+
+.img-fixed {
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .btn-rounded {
+        border-radius: 25px !important;
+    }
