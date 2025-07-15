@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Accueil</title>
+</head>
+
+<style>
+    .img-fixed {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .btn-rounded {
+        border-radius: 25px !important;
+    }
+</style>
+
+
+<body>
+
+    <!-- Header -->
+
+    <header class="container-fluid bg-primary">
+        <!-- Navigation et boutons sur la même ligne -->
+        <div class="row align-items-center py-2">
+            <div class="col-6">
+                <ul class="list-unstyled d-flex mb-0">
+                    <li class="me-4"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li class="me-4"><a href="#" class="text-white text-decoration-none">About</a></li>
+                    <li class="me-4"><a href="#" class="text-white text-decoration-none">Collection</a></li>
+                    <li class="me-4"><a href="#" class="text-white text-decoration-none">Author</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 text-end">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                        </path>
+                    </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z">
+                        </path>
+                    </svg></a>
+                <a href="#" class="btn btn-light btn-rounded"> Subscribe</a>
+            </div>
+        </div>
+
+        <!-- Titre centré -->
+
+        <div class="d-flex flex-column align-items-center text-center py-5">
+            <h1 class="text-white display-4 mb-2">CONTACT</h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="container-fluid py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12 bg-primary p-3">
+                    <div class="bg-white p-4 rounded shadow">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="compagnie" class="form-label">Compagnie</label>
+                                    <input type="text" class="form-control" id="compagnie">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Numéro de téléphone</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Téléphone">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Adresse Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="website" class="form-label">Ton site <small class="text-muted">Inclure
+                                            le http://</small></label>
+                                    <input type="url" class="form-control" id="website" placeholder="URL">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Quel est le meilleur moment de la journée pour vous joindre
+                                    ?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="timeToReach" id="morning"
+                                        value="morning">
+                                    <label class="form-check-label" for="Matin">
+                                        Matin
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="timeToReach" id="evening"
+                                        value="evening" checked>
+                                    <label class="form-check-label" for="Après-midi">
+                                        Après-midi
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Souhaitez-vous recevoir notre newsletter par e-mail ?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter" value="Oui">
+                                    <label class="form-check-label" for="newsletter">
+                                        Oui !
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="text-start">
+                                <button type="submit" class="btn btn-primary px-4 py-2">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="container-fluid bg-dark text-white py-3">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-center">
+                <p class="mb-0">Ghost 2021</p>
+                <p class="mb-0">Data & privacy - Contact - Contributor</p>
+                <p class="mb-0">Powered by Ghost</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
